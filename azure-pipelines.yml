@@ -11,6 +11,10 @@ pool:
 
 steps:
 - script: echo Hello, world!
+- task: PythonScript@0
+  inputs:
+    scriptSource: 'inline'
+    script: 'print "demo"'
   displayName: 'Run a one-line script'
 
 - script: |
